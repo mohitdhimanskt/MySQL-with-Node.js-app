@@ -96,3 +96,17 @@ app.get('/updatepost/:id', (req, res) => {
   });
 });
 
+// Delete post
+app.get('/deletepost/:id', (req, res) => {
+  let newTitle = 'Updated Title';
+  let sql = `DELETE FROM posts WHERE id = ${req.params.id}`;
+  let query = db.query(sql, (err, result) => {
+      if(err) throw err;
+      console.log(result);
+      res.send('Post deleted...');
+  });
+});
+
+app.listen('3000', () => {
+  console.log('Server started on port 3000');
+});
