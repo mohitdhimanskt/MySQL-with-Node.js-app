@@ -62,3 +62,15 @@ app.get('/addpost2', (req, res) => {
       res.send('Post 2 added...');
   });
 });
+
+
+// Select posts
+app.get('/getposts', (req, res) => {
+  let sql = 'SELECT * FROM posts';
+  let query = db.query(sql, (err, results) => {
+      if(err) throw err;
+      console.log(results);
+      res.send('Posts fetched...');
+  });
+});
+
