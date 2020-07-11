@@ -1,0 +1,19 @@
+{
+  "name": "mysql-and-node.js-app",
+  "version": "1.0.0",
+  "description": "Code along",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohitdhimanskt/MySQL-with-Node.js-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohitdhimanskt/MySQL-with-Node.js-app/issues"
+  },
+  "homepage": "https://github.com/mohitdhimanskt/MySQL-with-Node.js-app#readme"
+}
