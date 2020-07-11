@@ -39,4 +39,15 @@ app.get('/createpoststable', (req, res) => {
       console.log(result);
       res.send('Posts table created...');
   });
+})
+
+// Insert post 1
+app.get('/addpost1', (req, res) => {
+  let post = {title:'Post One', body:'This is post number one'};
+  let sql = 'INSERT INTO posts SET ?';
+  let query = db.query(sql, post, (err, result) => {
+      if(err) throw err;
+      console.log(result);
+      res.send('Post 1 added...');
+  });
 });
